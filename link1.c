@@ -79,10 +79,8 @@ int main() {
 
     // 插入结点
     insertLinkList(node, "a", 10);
-/*
-    insertLinkList(node, "b", 2);
-    insertLinkList(node, "c", 3);
-*/
+    insertLinkList(node, "b", 20);
+    insertLinkList(node, "c", 30);
 
     // 遍历链表
     displayLinkList(node);
