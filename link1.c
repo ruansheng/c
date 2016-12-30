@@ -52,13 +52,11 @@ void displayLinkList(struct Node *link) {
     }
     printf("display end \n\n");
 }
+*/
 
 void freeLinkList(struct Node *link) {
     struct Node *tmp = link;
     struct Node *pnode;
-    if(NULL == tmp) {
-       return ;
-    }
     while(NULL != tmp->next) {
         pnode = tmp->next;
         tmp = tmp->next;
@@ -67,15 +65,17 @@ void freeLinkList(struct Node *link) {
 
     free(link);
 }
-*/
 
 int main() {
     struct Node * node;
     printf("%p\n", node);
     // 初始化头结点
     node = initLinkList();
+    if(NULL == node) {
+        exit();
+    }
     printf("%p\n", node);
-    //free(node);
+
 /*
     // 遍历链表
     displayLinkList(node);
@@ -87,12 +87,13 @@ int main() {
 
     // 遍历链表
     displayLinkList(node);
+*/
 
     // 释放内存
     freeLinkList(node);
 
     // 遍历链表
-    displayLinkList(node);
-*/
+    //displayLinkList(node);
+
     return 0;
 }
