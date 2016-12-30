@@ -59,12 +59,10 @@ void insertLinkList(struct Node *link, char key[], int val) {
 */
 
 void freeLinkList(struct Node *link) {
-    struct Node *tmp = link;
-    struct Node *pnode;
-    while(NULL != tmp->next) {
-        pnode = tmp->next;
-        tmp = tmp->next;
+    struct Node *tmp = link->next;
+    while(NULL != tmp) {
         free(pnode);
+        tmp = tmp->next;
     }
 
     free(link);
