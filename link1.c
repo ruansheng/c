@@ -65,7 +65,7 @@ void freeLinkList(struct Node *link) {
 }
 
 int main() {
-    struct Node * node;
+    struct Node * node = NULL;
     printf("%p\n", node);
     // 初始化头结点
     node = initLinkList();
