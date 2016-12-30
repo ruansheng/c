@@ -57,9 +57,11 @@ void insertLinkList(struct Node *link, char key[], int val) {
 
 void freeLinkList(struct Node *link) {
     struct Node *tmp = link->next;
+    struct Node *pnode;
     while(NULL != tmp) {
-        free(pnode);
+        pnode = tmp;
         tmp = tmp->next;
+        free(pnode);
     }
 
     free(link);
