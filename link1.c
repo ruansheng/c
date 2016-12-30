@@ -27,12 +27,9 @@ struct Node *initLinkList() {
 }
 
 void displayLinkList(struct Node *link) {
-    if(NULL == link) {
-        return;
-    }
-    struct Node *tmp = link;
+    struct Node *tmp = link->next;
     printf("display start \n");
-    while(NULL != tmp->next) {
+    while(NULL != tmp) {
         printf("%d \n", tmp->val);
         tmp = tmp->next;
     }
