@@ -25,6 +25,7 @@ struct Node *initLinkList() {
     return link;
 }
 
+/*
 void insertLinkList(struct Node *link, char key[], int val) {
     struct Node *tmp = link;
     while(NULL != tmp->next) {
@@ -65,13 +66,14 @@ void freeLinkList(struct Node *link) {
 
     free(link);
 }
+*/
 
 int main() {
     struct Node * node;
 
     // 初始化头结点
     node = initLinkList();
-
+/*
     // 遍历链表
     displayLinkList(node);
 
@@ -88,6 +90,6 @@ int main() {
 
     // 遍历链表
     displayLinkList(node);
-
+*/
     return 0;
 }
