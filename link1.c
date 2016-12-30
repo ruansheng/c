@@ -22,6 +22,7 @@ struct Node *initLinkList() {
         return NULL;
     }
     link->next = NULL;
+    printf("%p\n", link);
     return link;
 }
 
@@ -70,9 +71,10 @@ void freeLinkList(struct Node *link) {
 
 int main() {
     struct Node * node;
-
+    printf("%p\n", node);
     // 初始化头结点
     node = initLinkList();
+    printf("%p\n", node);
 /*
     // 遍历链表
     displayLinkList(node);
