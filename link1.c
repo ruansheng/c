@@ -36,7 +36,6 @@ void displayLinkList(struct Node *link) {
     printf("display end \n\n");
 }
 
-/*
 void insertLinkList(struct Node *link, char key[], int val) {
     struct Node *tmp = link;
     while(NULL != tmp->next) {
@@ -52,8 +51,6 @@ void insertLinkList(struct Node *link, char key[], int val) {
     node->next = NULL;
     tmp->next = node;
 }
-
-*/
 
 void freeLinkList(struct Node *link) {
     struct Node *tmp = link->next;
@@ -80,15 +77,15 @@ int main() {
     // 遍历链表
     displayLinkList(node);
 
-/*
     // 插入结点
-    insertLinkList(node, "a", 1);
+    insertLinkList(node, "a", 10);
+/*
     insertLinkList(node, "b", 2);
     insertLinkList(node, "c", 3);
+*/
 
     // 遍历链表
     displayLinkList(node);
-*/
 
     // 释放内存
     freeLinkList(node);
