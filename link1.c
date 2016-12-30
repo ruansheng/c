@@ -75,7 +75,7 @@ int main() {
     // 初始化头结点
     node = initLinkList();
     printf("%p\n", node);
-    free(node);
+    //free(node);
 /*
     // 遍历链表
     displayLinkList(node);
