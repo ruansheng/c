@@ -72,7 +72,7 @@ int main() {
     // 初始化头结点
     node = initLinkList();
     if(NULL == node) {
-        exit();
+        exit(0);
     }
     printf("%p\n", node);
 
