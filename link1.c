@@ -89,7 +89,7 @@ int main() {
     freeLinkList(node);
 
     // 遍历链表
-    displayLinkList(node);
+    //displayLinkList(node);
 
     return 0;
 }
